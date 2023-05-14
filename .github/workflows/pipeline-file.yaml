@@ -38,9 +38,9 @@ jobs:
       # - name: echo env
       #   run: echo ${{ env.BUILD_TAG }}
 
-      # - name: test images
-      #   run: | 
-      #     docker images
+      - name: test images
+        run: | 
+          docker images
 
       # - name: test
         # run: source environment.sh envsubst < aks-config.yaml.template > aks-config.yaml |
